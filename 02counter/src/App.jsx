@@ -11,11 +11,17 @@ function App() {
   
   const addValue = () =>{
     console.log("Clicked")
+    if(counter>=20){
+      return;
+    }
     setCounter(counter+1)
   }
   
   const decrementValue = () =>{
     console.log("Clicked to Del")
+    if(counter<=0){
+      return;
+    }
     setCounter(counter-1)
   }
 
